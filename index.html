@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf App</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <div class="header-container">
+    <header>
+      <img src="./assets/images/book-shelf.png" alt="book-shelf-logo" class="logo">
+      <h1>Bookshelf App</h1>
+    </header>
+    <div class="alert-container hidden">
+      <div class="dialog-box">
+        <p class="dialog-message"></p>
+      </div>
+      <button class="close-alert">
+        &times;
+      </button>
+    </div>
+  </div>
+  <main>
+    <section>
+      <div>
+        <div class="section-header">
+          <img src="./assets/images/search.png" alt="">
+          <h2>Cari Buku</h2>
+        </div>
+        <form class="inset-card" id="find-book">
+          <p>Judul</p>
+          <input class="input-text" type="text"id="input-find-book">
+          <button type="submit">Cari</button>
+        </form>
+      </div>
+      <div>
+        <div class="section-header">
+          <img src="./assets/images/books.png" alt="">
+          <h2>Tambah Buku</h2>
+        </div>
+        <form id="new-book" class="inset-card">
+          <p>Judul</p>
+          <input class="input-text" type="text" id="input-title" required>
+          <p>Penulis</p>
+          <input class="input-text" type="text" id="input-author" required>
+          <p>Tahun Terbit</p>
+          <input class="input-text" type="number" id="input-year" min="1800" required>
+          <label for="input-is-complete">Selesai Dibaca</label>
+          <input type="checkbox" id="input-is-complete">
+          <button type="submit">Tambah Buku</button>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div class="section-header">
+        <img src="./assets/images/book-open.png" alt="">
+        <h2>Belum selesai dibaca</h2>
+      </div>
+      <div id="not-yet-finished" class="inset-card">
+      </div>
+    </section>
+    <section>
+      <div class="section-header">
+        <img src="./assets/images/book-closed.png" alt="">
+        <h2>Selesai dibaca</h2>
+      </div>
+      <div id="finished" class="inset-card">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>illustrations by <a href="https://www.irasutoya.com/">いらすとや</a></p>
+    <p>&copy; 2022, Su'udi Khoirul Anam</p>
+  </footer>
+  <script src="./assets/script.js"></script>
+</body>
+</html>
